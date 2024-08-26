@@ -20,6 +20,7 @@
         theme: {
           extend: {
             colors: {
+            bgcolor: '#F4F4F4' ,
               clifford: "#da373d",
               Primary: "rgb(171, 239, 95)",
               smallText: 'rgb(73, 73, 73)'
@@ -51,10 +52,10 @@
       rel="stylesheet"
     />
   </head>
-  <body class=" ">
-    <header class="w-11/12 mx-auto">
+  <body class="bg-gradient-to-b from-bgcolor to-white">
+    <header class="w-10/12 mx-auto">
       <nav class=" ">
-        <div class="navbar bg-base-100">
+        <div class="navbar  ">
           <div class="navbar-start">
             <a class="btn btn-ghost text-xl">
               <div class="bg-Primary rounded-full h-8 w-8 items-center">
@@ -93,15 +94,22 @@
             </ul>
           </div>
           <div class="navbar-end">
-            <div class="flex items-center gap-5">
-              <button class="flex items-center gap-2 font-semibold">
-                <i class="fa-solid fa-magnifying-glass"></i>
-                <i class="fa-solid fa-cart-shopping"></i>
+            <div class="items-center gap-10 hidden lg:block">
+              <button class="flex items-center  font-semibold gap-4">
+                <i class="fa-solid fa-magnifying-glass rounded-full p-3 bg-white"></i>
+                <i class="fa-solid fa-cart-shopping rounded-full   p-3 bg-white"></i>
+                <div class="flex btn   px-5 text-black  bg-[rgb(171,239,95)] rounded-full my-8 font-bold">
+       
+                  Book Consult
+                             
+                               <div class="bg-black rounded-full h-8 w-8 items-center">
+                                 <i class="fa-solid fa-arrow-up rotate-45 items-center mt-2 text-white"></i>
+                             
+                               </span
+                             >
+                           </button>
               </button>
-              <button>
-                <!-- icon  -->
-                <i class="fa-solid fa-user"></i>
-              </button>
+             
             </div>
 
             <div class="dropdown">
@@ -137,8 +145,20 @@
                 >
                   <a href="">Contact</a>
                 </li>
+                <button class="flex items-center gap-2 font-semibold">
+                  <i class="fa-solid fa-magnifying-glass"></i>
+                  <i class="fa-solid fa-cart-shopping"></i>
+                  <button class="flex btn  w-full lg:w-2/5  px-5 text-black  bg-[rgb(171,239,95)] rounded-full my-8 font-bold">Book Consult<div class="bg-black rounded-full h-8 w-8 items-center">
+                                   <i class="fa-solid fa-arrow-up rotate-45 items-center mt-2 text-white"></i>
+                               
+                                 </span
+                               >
+                             </button>
+                </button>
               </ul>
+              
             </div>
+
           </div>
         </div>
       </nav>
@@ -176,11 +196,16 @@
       
     </header>
 <!-- liveable space  -->
- <section class="bg-orange-50 absolute">
+ <section class="bg-gray-200 absolute">
+  <div class="w-11/12 mx-auto">
+    <img src="./assets/Vector.png" alt="">
+    <p class="bg-white w-9/12 lg:w-1/5 p-2 rounded-full text-lg font-bold mt-2"><i class="fa-solid fa-arrow-right"></i> How we works</p>
+   </div>
   <section class="px-10 flex flex-col lg:flex-row p-10 mx-auto">
     <!-- About  -->
 
     <!-- text  -->
+   
      <div class="w-full lg:w-1/2 pr-5 mx-auto   ">
         <h1 class="text-4xl font-bold">We design thoughtful, <br> liveable spaces</h1>
         <p class="text-smallText my-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus totam consequatur pariatur quia debitis aut, deleniti explicabo eum nihil optio!</p>
@@ -234,7 +259,7 @@
     <section class="w-11/12 my-10 py-5 mx-auto ">
 <div class="text-center">
   
-    <p class="bg-white w-1/5 mx-auto p-5 rounded-full text-lg font-bold"><i class="fa-solid fa-arrow-right"></i> How we works</p>
+    <p class="bg-white w-9/12 lg:w-1/5 mx-auto p-5 rounded-full text-lg font-bold"><i class="fa-solid fa-arrow-right"></i> How we works</p>
   
 <h1 class="text-4xl font-bold py-4">Our Work Process</h1>
 <p>The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents.</p>
@@ -264,17 +289,40 @@
     </section>
  <!-- latest portfolio section  -->
 <section class="  mx-auto bg-white">
-  <div class="text-center">
+  <div class="text-center pt-5">
   
-    <p class="bg-[rgba(171,239,95,0.2)] w-2/5 mx-auto p-5 rounded-full text-lg font-bold"><i class="fa-solid fa-arrow-right"></i> Explore Our Latest works</p>
+    <p class="bg-[rgba(171,239,95,0.2)] w-3/4 lg:w-2/5 mx-auto p-5 rounded-full text-lg font-bold"><i class="fa-solid fa-arrow-right"></i> Explore Our Latest works</p>
   
 <h1 class="text-4xl font-bold py-4">Our Latest Portfolio</h1>
 <p class="py-10">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents.</p>
 </div>
 
 <!-- main div  -->
- <div class="  flex flex-col lg:flex-row gap-x-20 w-10/12 mx-auto">
-   <div class=" items-center flex  border-4 grow w-3/4 gap-5">
+ <div></div>
+  <div class="  flex flex-col lg:flex-row gap-10  w-11/12 mx-auto">
+   <div class=" card card-side flex flex-col lg:flex-row p-0 lg:p-2  bg-base-100 border-2 w-auto lg:w-[65%]">
+    <figure>
+      <img class="rounded-3xl p-4 lg:pl-4 h-48"
+        src="./assets/img1.png"
+        alt="Movie" />
+    </figure>
+    <div class="card-body">
+      <h2 class="card-title font-bold">Commercial</h2>
+      <p>Click the button to watch on Jetflix app.   extra hour of work will lead you closer to success</p>
+      <div class="card-actions">
+        <button class="flex btn w-full lg:w-auto   rounded-full mb-2">
+          view Details
+               
+                 <div class="bg-Primary rounded-full h-8 w-8 items-center">
+                   <i class="fa-solid fa-arrow-up rotate-45 items-center mt-2"></i>
+               
+                 </span
+               >
+             </button>
+      </div>
+    </div>
+   </div>
+   <!-- <div class=" items-center flex flex-col lg:flex-row  border-4 grow w-full lg:w-3/4 gap-5">
     <div>
       <img class="h-[200px]" src="./assets/img1.png" alt="">
     </div>
@@ -295,20 +343,51 @@
     </div>
     </div>
    
+   </div> -->
+   <div class="ml-aut border-2 rounded-2xl p-5">
+    <img class="h-48" src="./assets/img2.png" alt="">
    </div>
-   <div class="ml-aut border-2">
-    <img class="" src="./assets/img2.png" alt="">
+ </div>
+<!-- second row  -->
+ <div class="flex flex-col lg:flex-row  w-11/12 mx-auto gap-5 py-5">
+  <div class="ml-aut border-2 rounded-2xl p-5 ">
+    <img class="h-48 w-full" src="./assets/img3.png" alt="">
+   </div>
+   <div class=" card card-side flex flex-col lg:flex-row  bg-base-100   border-2">
+    <figure>
+      <img class="rounded-3xl pl-4 h-48 w-full  object-cover"
+        src="./assets/img4.png"
+        alt="Movie" />
+    </figure>
+    <div class="card-body w-full lg:w-[60%]">
+      <h2 class="card-title font-bold">Commercial</h2>
+      <p class="">Click the button to watch on  <br> extra hour of work will lead you closer to success</p>
+      <div class="card-actions">
+        <button class="flex btn w-full lg:w-auto   rounded-full mb-2">
+          view Details
+               
+                 <div class="bg-Primary rounded-full h-8 w-8 items-center">
+                   <i class="fa-solid fa-arrow-up rotate-45 items-center mt-2"></i>
+               
+                 </span
+               >
+             </button>
+      </div>
+    </div>
+   </div>
+  <div class="ml-aut border-2 rounded-2xl p-5">
+    <img class="h-48 w-full" src="./assets/img5.png" alt="">
    </div>
  </div>
 </section>
 
-<footer class="mt-10">
- <div class="bg-bannerBg">
+<footer class="pt-10">
+ <div class="bg-bannerBg bg-cover b pt-10">
   <div class="text-center">
   
-    <p class="bg-[rgba(171,239,95,0.2)] w-1/5 mx-auto p-5 rounded-full text-lg font-bold"><i class="fa-solid fa-arrow-right"></i>Let's Connect</p>
+    <p class="bg-[rgba(171,239,95,0.2)] w-4/5 lg:w-1/4 mx-auto p-2 lg:p-5 rounded-full text-lg font-bold"><i class="fa-solid fa-arrow-right"></i> Let's Connect</p>
   
-<h1 class="text-4xl font-bold py-4">Let's Discuss Our Next Project</h1>
+<h1 class="text-3xl lg:text-4xl font-bold py-4">Let's Discuss Our Next Project</h1>
 <p class="py-10">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents.</p>
 </div>
 <!-- input section  -->
@@ -322,13 +401,13 @@
    </div>
    <div class="w-3/4 mx-auto my-10">
     <textarea class="w-full h-40 p-5 rounded-xl" name="" id="" placeholder="write your message here"></textarea>
-    <div class="flex justify-center ">
-      <button class="flex btn w-full   bg-[rgba(171,239,95,0.5)] rounded-full my-2">
+    <div class="flex justify-center">
+      <button class="flex btn w-full bg-[rgb(171,239,95)] rounded-full my-2 font-bold">
          
         Send Email
                
-                 <div class="bg-Primary rounded-full h-8 w-8 items-center">
-                   <i class="fa-solid fa-arrow-up rotate-45 items-center mt-2"></i>
+                 <div class="bg-black rounded-full h-8 w-8 items-center">
+                   <i class="fa-solid fa-arrow-up rotate-45 items-center mt-2 text-white"></i>
                
                  </span
                >
@@ -341,19 +420,19 @@
 
  </div>
  <!-- main footer  -->
-  <div class=" bg-black py-10">
-    <div class="text-center w-3/5 mx-auto text-white">
+  <div class=" bg-[rgb(28,28,28)] py-10">
+    <div class="text-center w-full lg:w-3/5 mx-auto text-white">
       <a class="btn btn-ghost text-xl">
         <div class="bg-Primary rounded-full h-8 w-8 items-center">
           <i class="fa-solid fa-arrow-up rotate-45 items-center"></i>
         </div>
         <h1 class="text-3xl font-bold">Rinterio</h1></a
       >
-      <p class="py-10 w-4/5 mx-auto">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio similique veniam architecto suscipit! Unde consequuntur, quaerat nam adipisci sint temporibus? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus, tempore!</p>
+      <p class="py-10 w-4/5 mx-auto text-[rgb(115,115,115)]">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio similique veniam architecto suscipit! Unde consequuntur, quaerat nam adipisci sint temporibus? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus, tempore!</p>
   <div>
     <ul
                   tabindex="0"
-                  class="grid grid-cols-1 lg:grid-cols-5"
+                  class="grid grid-cols-1 lg:grid-cols-5 gap-10"
                 >
                   <li
                     class="hover:text-primary transition-colors duration-700 ease-in-out"
@@ -363,32 +442,32 @@
                   <li
                     class="hover:text-primary transition-colors duration-700 ease-in-out"
                   >
-                    <a href="">Everything</a>
+                    <a href="">Services</a>
                   </li>
                   <li
                     class="hover:text-primary transition-colors duration-700 ease-in-out"
                   >
-                    <a href="">Groceries</a>
+                    <a href="">Portfolio</a>
                   </li>
                   <li
                     class="hover:text-primary transition-colors duration-700 ease-in-out"
                   >
-                    <a href="">About</a>
+                    <a href="">Blogs</a>
                   </li>
                   <li
                     class="hover:text-primary transition-colors duration-700 ease-in-out"
                   >
-                    <a href="">Contact</a>
+                    <a href="">Contact Us</a>
                   </li>
                 </ul>
   </div>
-  <div class="flex justify-center ">
-    <button class="flex btn px-5 text-black  bg-[rgba(171,239,95,0.5)] rounded-full my-8">
+  <div class="flex justify-center">
+    <button class="flex btn  w-4/5 lg:w-2/5  px-5 text-black  bg-[rgb(171,239,95)] rounded-full my-8 font-bold">
        
   Book Consult
              
-               <div class="bg-Primary rounded-full h-8 w-8 items-center">
-                 <i class="fa-solid fa-arrow-up rotate-45 items-center mt-2"></i>
+               <div class="bg-black rounded-full h-8 w-8 items-center">
+                 <i class="fa-solid fa-arrow-up rotate-45 items-center mt-2 text-white"></i>
              
                </span
              >
