@@ -15,6 +15,11 @@
     <script src="https://cdn.tailwindcss.com"></script>
 
     <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      .font-manrope{
+        font-family: "Manrope", sans-serif;
+      }
+    </style>
     <script>
       tailwind.config = {
         theme: {
@@ -25,9 +30,7 @@
               Primary: "rgb(171, 239, 95)",
               smallText: 'rgb(73, 73, 73)'
             },
-            fontFamily: {
-              Poppins: "poppins",
-            },
+            
             backgroundImage: {
               bannerBg: "url('./assets/bg.jpg')",
               
@@ -45,15 +48,13 @@
     ></script>
 
     <!-- google font  -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap"
-      rel="stylesheet"
-    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+
   </head>
-  <body class="bg-gradient-to-b from-bgcolor to-white">
-    <header class="w-10/12 mx-auto h-[700px] lg:h-auto">
+  <body class="bg-gradient-to-b from-bgcolor to-white font-manrope">
+    <header class="w-10/12 mx-auto h-[700px]  lg:h-auto">
       <nav class=" ">
         <div class="navbar  ">
           <div class="navbar-start">
@@ -61,7 +62,7 @@
               <div class="bg-Primary rounded-full h-8 w-8 items-center">
                 <i class="fa-solid fa-arrow-up rotate-45 items-center"></i>
               </div>
-              <h1 class="text-3xl font-bold">Rinterio</h1></a
+              <h1 class="text-3xl font-extrabold">Rinterio</h1></a
             >
           </div>
           <div class="navbar-center hidden lg:flex">
@@ -146,8 +147,10 @@
                   <a href="">Contact</a>
                 </li>
                 <button class="flex items-center gap-2 font-semibold">
-                  <i class="fa-solid fa-magnifying-glass"></i>
-                  <i class="fa-solid fa-cart-shopping"></i>
+                <div class="flex flex-col ml-5">
+                    <i class="fa-solid fa-magnifying-glass p-2"></i>
+                  <i class="fa-solid fa-cart-shopping p-2"></i>
+                </div>
                   <button class="flex btn  w-full lg:w-2/5  px-5 text-black  bg-[rgb(171,239,95)] rounded-full my-8 font-bold">Book Consult<div class="bg-black rounded-full h-8 w-8 items-center">
                                    <i class="fa-solid fa-arrow-up rotate-45 items-center mt-2 text-white"></i>
                                
@@ -209,7 +212,7 @@
     <!-- text  -->
    
      <div class="w-full lg:w-1/2 pr-5 mx-auto   ">
-        <h1 class="text-2xl lg:text-4xl font-bold text-center">We design thoughtful, liveable spaces</h1>
+        <h1 class="text-2xl lg:text-4xl font-extrabold text-center lg:text-left">We design thoughtful, liveable spaces</h1>
         <p class="text-smallText my-5">By combining innovative design with a deep understanding of how people live and interact with their environments, we create thoughtful, livable spaces that enhance everyday life. </p>
         <div class="flex bg-white p-5 gap-5 my-5 rounded-2xl">
             <img  class="h-12 lg:h-16" src="./assets/commercial.png" alt="">
@@ -263,7 +266,7 @@
   
     <p class="bg-white w-9/12 lg:w-1/5 mx-auto rounded-full text-lg font-bold"><i class="fa-solid fa-arrow-right"></i> How we works</p>
   
-<h1 class="text-4xl font-bold py-4">Our Work Process</h1>
+<h1 class="text-4xl font-extrabold py-4">Our Work Process</h1>
 <p> We begin with an initial consultation to understand your vision, needs, and lifestyle.</p>
 </div>
 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 my-10 mx-auto ">
@@ -294,7 +297,7 @@
 
     <!-- Our Works and Review  -->
      <div class="text-center">
-      <h2 class="text-4xl lg:text-5xl font-bold">Our works</h2>
+      <h2 class="text-4xl lg:text-5xl font-extrabold">Our works</h2>
       <p class="mx-2 my-5">we are committed to delivering exceptional quality in every project we undertake. Our focus is on ensuring client satisfaction</p>
      </div>
 <!-- div 3 ta  -->
@@ -374,9 +377,18 @@
     
     
      </section>
-     <div class="flex items-center justify-center mb-10">
-      <button class="btn btn-secondary">Show more...</button>
-    </div>
+     
+    <div class="flex justify-center ">
+      <button class="flex btn w-4/5 lg:w-auto bg-[rgba(171,239,95,0.5)] rounded-full mb-2 font-bold">
+           See more...
+               
+                 <div class="bg-Primary rounded-full h-8 w-8 items-center">
+                   <i class="fa-solid fa-arrow-up rotate-45 items-center mt-2"></i>
+               
+                 </span
+               >
+             </button>
+  </div>
  <!-- latest portfolio section  -->
 <section class="  mx-auto bg-white">
   <div class="text-center pt-5">
@@ -398,7 +410,7 @@
     </figure>
     <div class="card-body">
       <h2 class="card-title font-bold">Commercial</h2>
-      <p>Click the button to watch on Jetflix app.   extra hour of work will lead you closer to success</p>
+      <p>we maintain financial control and transparency, ensuring that the project is completed on time and within budget </p>
       <div class="card-actions">
         <button class="flex btn w-full lg:w-auto   rounded-full mb-2">
           view Details
@@ -450,8 +462,8 @@
         alt="Movie" />
     </figure>
     <div class="card-body w-full lg:w-[60%]">
-      <h2 class="card-title font-bold">Commercial</h2>
-      <p class="">Click the button to watch on  <br> extra hour of work will lead you closer to success</p>
+      <h2 class="card-title font-bold">Residential</h2>
+      <p class="">carefully analyzing   requirements <br> and goals to create a detailed budget that aligns with cost</p>
       <div class="card-actions">
         <button class="flex btn w-full lg:w-auto   rounded-full mb-2">
           view Details
@@ -475,7 +487,7 @@
  <div class="bg-bannerBg bg-cover b pt-10">
   <div class="text-center">
   
-    <p class="bg-[rgba(171,239,95,0.2)] w-4/5 lg:w-1/4 mx-auto p-2 lg:p-5 rounded-full text-lg font-bold"><i class="fa-solid fa-arrow-right"></i> Let's Connect</p>
+    <p class="bg-[rgba(171,239,95,0.2)] w-4/5 lg:w-1/4 mx-auto p-2 lg:p-5 rounded-full text-lg font-extrabold"><i class="fa-solid fa-arrow-right"></i> Let's Connect</p>
   
 <h1 class="text-3xl lg:text-4xl font-bold py-4">Let's Discuss Our Next Project</h1>
 <p class="py-10">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents.</p>
